@@ -1,10 +1,6 @@
-# scikit-build-core + pybind11
-# [build-system]
-# requires = ["scikit-build-core>=0.9", "pybind11>=2.12"]
-# build-backend = "scikit_build_core.build"
 [build-system]
-requires = ["setuptools>=81.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["scikit-build-core>=0.9", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
 
 [project]
 name = "ayaka"
@@ -125,6 +121,4 @@ dev = [
     "pytest-timeout>=2.4.0",
     "ruff>=0.16.1",
 ]
-test = [
-    "psutil>=7.2.2",
-]
+test = ["psutil>=7.2.2"]
